@@ -1,9 +1,7 @@
 import React,{useState} from 'react';
 import BeforeLoginContainer from '../ContainerPages/BeforeLoginContainer';
 import { GetResourceText } from '../Data/Resources';
-import Input from '../CustomControls/Input';
-import Button from '../CustomControls/Button';
-import Anchor from '../CustomControls/Anchor';
+import {Input, Button, Anchor} from '../CustomControls';
 
 function ForgotPassword(props) {
     const [email, setEmail] = useState({});

@@ -1,14 +1,12 @@
 ﻿import React, { useState } from "react";
+import {Input, Button, Anchor} from '../CustomControls';
 import { useHistory } from "react-router-dom";
-import Input from "../CustomControls/Input";
 import './login.css';
 import '../Css/spacing.css';
-import Button from "../CustomControls/Button";
 import { Login } from './User';
 import { CurrentContext } from "../utility/AppContext"
 import BeforeLoginContainer from "../ContainerPages/BeforeLoginContainer";
 import { GetResourceText } from "../Data/Resources";
-import Anchor from "../CustomControls/Anchor";
 
 
 const LoginPage = props => {

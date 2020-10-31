@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import BeforeLoginContainer from '../ContainerPages/BeforeLoginContainer';
-import Input from '../CustomControls/Input';
-import Button from '../CustomControls/Button';
-import Anchor from '../CustomControls/Anchor';
+import {Input, Button, Anchor} from '../CustomControls';
 import { GetResourceText } from '../Data/Resources';
 
 function RegisterUser(props) {
