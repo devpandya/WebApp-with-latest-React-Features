@@ -1,0 +1,115 @@
+:root {
+    --primary-app-color: #aebe92;
+    --secondary-app-color: #0A43AD;
+    --generic-background-color: #FFFFFF;
+    --app-background-color: #FAFAFA;
+
+    --error-color: #D32027;
+    --success-color: #41AD49;
+
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --tertiary-text-color: #b0b0b0;
+
+    --header-background-color: #0078D3;
+    --header-text-color: #FFFFFF;
+    --footer-background-color: #0078D3;
+    --footer-text-color: #FFFFFF;
+
+    --accent-color: #F6861F;
+    --seperator-n-disabled-color: #E0E0E0;
+    --primary-app-background-text-color: #FFFFFF;
+    
+    --selected-background-color: #F1F1F1;
+    --tertiary-background-color: #cce4f6;
+
+    --font-size-heading-1: 32px;
+    --font-size-heading-2: 24px;
+    --font-size-heading-3: 20px;
+    --font-size-heading-4: 18px;
+    --font-size-heading-5: 16px;
+    --font-size-body-large: 14px;
+    --font-size-body-medium: 12px;
+    --font-size-body-small: 10px;
+
+    --font-face: 'Manrope', sans-serif !important;
+    --font-weight-regular: 300;
+    --font-weight-semi-bold: 600;
+    --font-weight-bold: 800;
+
+    --direction: ltr;
+    --generic-opacity: 0.7;
+    --generic-control-height: 40px;
+    --image-width: 80px;
+    --image-height: 80px;
+
+    --spacing-default:15px;
+    --spacing-xxs:5px;
+    --spacing-xs:10px;
+    --spacing-sm:15px;
+    --spacing-md:20px;
+    --spacing-lg:30px;
+    --spacing-xl:45px;
+    --spacing-xxl:60px;
+    --spacing-xxxl:80px;
+    
+}
+
+body{
+    font-family: var(--font-face);
+    margin:unset !important;
+}
+
+/* [class*="col-"] {
+    width: 100%;
+  } */
+
+  @media only screen and (max-width: 767px) {
+    /* For desktop: */
+    .cs-1 {width: 8.33%;}
+    .cs-2 {width: 16.66%;}
+    .cs-3 {width: 25%;}
+    .cs-4 {width: 33.33%;}
+    .cs-5 {width: 41.66%;}
+    .cs-6 {width: 50%;}
+    .cs-7 {width: 58.33%;}
+    .cs-8 {width: 66.66%;}
+    .cs-9 {width: 75%;}
+    .cs-10 {width: 83.33%;}
+    .cs-11 {width: 91.66%;}
+    .cs-12 {width: 100%;}
+  }
+
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .cm-1 {width: 8.33%;}
+    .cm-2 {width: 16.66%;}
+    .cm-3 {width: 25%;}
+    .cm-4 {width: 33.33%;}
+    .cm-5 {width: 41.66%;}
+    .cm-6 {width: 50%;}
+    .cm-7 {width: 58.33%;}
+    .cm-8 {width: 66.66%;}
+    .cm-9 {width: 75%;}
+    .cm-10 {width: 83.33%;}
+    .cm-11 {width: 91.66%;}
+    .cm-12 {width: 100%;}
+  }
+
+  @media only screen and (min-width: 1200px) {
+    /* For desktop: */
+    .cl-1 {width: 8.33%;}
+    .cl-2 {width: 16.66%;}
+    .cl-3 {width: 25%;}
+    .cl-4 {width: 33.33%;}
+    .cl-5 {width: 41.66%;}
+    .cl-6 {width: 50%;}
+    .cl-7 {width: 58.33%;}
+    .cl-8 {width: 66.66%;}
+    .cl-9 {width: 75%;}
+    .cl-10 {width: 83.33%;}
+    .cl-11 {width: 91.66%;}
+    .cl-12 {width: 100%;}
+  }
+

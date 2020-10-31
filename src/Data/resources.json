@@ -1,0 +1,16 @@
+[
+    {"key":"login","text":"Login", "languageid":"en-US"},
+    {"key":"register","text":"Register", "languageid":"en-US"},
+    {"key":"forgotpassword","text":"Forgot Password", "languageid":"en-US"},
+    {"key":"backtologin","text":"Back To Login", "languageid":"en-US"},
+    {"key":"send","text":"Send", "languageid":"en-US"},
+    {"key":"firstname","text": "First Name", "languageid": "en-US", "placeholder": "Please Enter First Name", "isrequired": true, "maxLength": 12, "type": "text" },
+    {"key":"lastname","text": "Last Name", "languageid": "en-US", "placeholder": "Please Enter Last Name", "isrequired": true, "maxLength": 12, "type": "text" },
+    {"key":"username","text": "UserName", "languageid": "en-US", "placeholder": "Please Enter UserName", "isrequired": true, "maxLength": 12, "type": "email" },
+    {"key":"password","text": "Password", "languageid": "en-US", "placeholder": "Please Enter Password", "isrequired": true, "maxLength": 12, "type": "password", "regex": "^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})" },
+    {"key":"email","text": "Email Id", "languageid": "en-US", "placeholder": "Please Enter EmailId", "isrequired": true, "maxLength": 15, "type": "email", "regex": "^w+@[a-zA-Z_]+?.[a-zA-Z]{2,3}$" },
+    {"key":"mobile","text": "Mobile Number", "languageid": "en-US", "placeholder": "Please Enter Mobile Number", "isrequired": true, "maxLength": 12, "type": "email" },
+    {"key":"passwordStrengthError","text": "Weak Password", "languageid": "en-US" },
+    {"key":"emailPatternError:","text": "InValid Email", "languageid": "en-US" },
+    {"key":"invalidCredentials","text":"Invalid Username or Password", "languageid": "en-US"}
+]

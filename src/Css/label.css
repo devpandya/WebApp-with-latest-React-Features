@@ -1,0 +1,88 @@
+@import "../index.css";
+
+.anchor{
+    color:var(--primary-app-color);
+    margin: 15px 15px;
+    font-size: var(--font-size-body-large);
+}
+/*------------------Font Colors------------------*/
+.f-primary-text{
+    color:var(--primary-text-color)
+}
+
+.f-secondary-text{
+    color:var(--secondary-text-color)
+}
+
+.f-tertiary-text{
+    color:var(--tertiary-text-color)
+}
+
+.f-primary{
+    color:var(--primary-app-color)
+}
+
+.f-generic{
+    color:var(--generic-background-color)
+}
+
+.f-error{
+    color:var(--error-color)
+}
+
+.f-success{
+    color:var(--success-color)
+}
+
+/*-------------------------------------------------------*/
+
+
+
+/*-------------------Font-Sizes--------------------*/
+.f-head-1{
+    font-size: var(--font-size-heading-1);
+}
+
+.f-head-2{
+    font-size: var(--font-size-heading-2);
+}
+
+.f-head-3{
+    font-size: var(--font-size-heading-3);
+}
+
+.f-head-4{
+    font-size: var(--font-size-heading-4);
+}
+
+.f-head-5{
+    font-size: var(--font-size-heading-5);
+}
+
+.f-body-l{
+    font-size: var(--font-size-body-large);
+}
+
+.f-body-m{
+    font-size: var(--font-size-body-medium);
+}
+.f-body-s{
+    font-size: var(--font-size-body-small);
+}
+
+/*-------------------------------------------------------*/
+
+
+/*------------Font-Weights--------------------*/
+.f-regular{
+    font-weight: var(--font-weight-regular);
+}
+
+.f-semi-bold{
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.f-bold{
+    font-weight: var(--font-weight-bold);
+}
+/*-------------------------------------------------------*/

@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "axios": "^0.20.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-v4-rtl": "^4.3.1-0",
+    "react": "16.13.1",
+    "react-app-polyfill": "^1.0.1",
+    "react-dom": "16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "1.0.17",
+    "rimraf": "^2.6.2",
+    "secure-ls": "^1.2.5"
+  },
+  "name": "webapp_0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "rimraf ./build && react-scripts start",
+    "build": "set GENERATE_SOURCEMAP=false && react-scripts build --exclude=node_modules",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "version": "0.1.0"
+}

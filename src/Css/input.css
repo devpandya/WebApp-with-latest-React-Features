@@ -1,0 +1,50 @@
+@import "../index.css";
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: var(--spacing-sm);
+}
+
+.input
+{
+    height: var(--generic-control-height);
+    border: var(--seperator-n-disabled-color) 1px solid;
+    padding: 0 var(--spacing-sm);
+    color: var(--primary-text-color);
+    font-size: var(--font-size-body-large);
+    border-radius: 3px;
+}
+
+.input:focus, .input:hover{
+    border: var(--primary-app-color) 1px solid;
+    outline: none;
+}
+
+.input::placeholder{
+    color:var(--tertiary-text-color);
+}
+
+.input-header{
+    margin-bottom: var(--spacing-xs);
+    color: var(--primary-text-color);
+    font-size: var(--font-size-body-large);
+}
+
+.error{
+    border: var(--error-color) 1px solid !important;
+    outline: none;
+}
+
+.error-label{
+    margin-top: var(--spacing-xs);
+    color: var(--error-color);
+    font-size: var(--font-size-body-medium);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
