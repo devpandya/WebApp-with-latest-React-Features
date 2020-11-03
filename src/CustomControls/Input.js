@@ -15,6 +15,10 @@ const Input = props => {
         if(value !== props.value){
             setValue(props.value)
         }
+        debugger;
+        if(props.ValidateElement){
+            props.ValidateElement(ValidateElement);
+        }
     },[props.value, setValue]);
 
     const onChange = (e) =>{
@@ -23,7 +27,7 @@ const Input = props => {
         if(Boolean(attributes.isrequired) && (e.currentTarget.value === null || e.currentTarget.value === undefined || e.currentTarget.value === "" || e.currentTarget.value.length < 1) ){
             isValid = false;
         }
-        isValid = isValid && validateRegex(e);
+        isValid = isValid && validateRegex(e.currentTarget.value);
         if(isValid || (Boolean(attributes.isrequired) && value && value.length < 1)){
             setError("");
         }
@@ -33,6 +37,20 @@ const Input = props => {
         setCurrentValue(e.currentTarget.value);
         props.onChange && props.onChange();
     }
+
+    const ValidateElement= ()=>{
+        debugger;
+        if(Boolean(attributes.isrequired) && (value === null || value === undefined || value === "" || value.length < 1) ){
+            isValid = false;
+        }
+        isValid = isValid && validateRegex(value);
+        if(isValid || (Boolean(attributes.isrequired) && value && value.length < 1)){
+            setError("");
+        }
+        else{
+            setClassName("input error");
+        }
+    }
     
 
     const setCurrentValue = value =>{
@@ -40,10 +58,10 @@ const Input = props => {
         props.getValue({value: value, isValid: isValid});
     }
 
-    const validateRegex = (e) =>{
+    const validateRegex = (inputVal) =>{
         let istextValid= true;
         if(attributes.regex && attributes.regex.length > 0){
-            istextValid = (new RegExp(attributes.regex)).test(e.currentTarget.value)
+            istextValid = (new RegExp(attributes.regex)).test(inputVal)
         }
         if(!istextValid){
             switch(attributes.type){
@@ -87,7 +105,7 @@ const Input = props => {
     }
 
     const onBlur = (e) =>{
-        if(Boolean(attributes.isrequired) && !firstChange && (!value && value.length <= 0))
+        if(Boolean(attributes.isrequired) && !firstChange && (!value || value.length <= 0))
         {
             isValid = false
             setError("");

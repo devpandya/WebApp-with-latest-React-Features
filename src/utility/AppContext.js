@@ -1,8 +1,10 @@
-﻿import React, { useContext } from "react";
+﻿import React from "react";
 export const AppContext = React.createContext([{}, () => { }]);
 
+let currentContextData;
 
 export function AppContextProvider(props) {
+    currentContextData = props;
     return (
         <AppContext.Provider value={props}>
             {props.children}
@@ -10,7 +12,7 @@ export function AppContextProvider(props) {
     );
 }
 
-export const CurrentContext = () => { return useContext(AppContext) };
+export const CurrentContext = () => { return currentContextData };
 
 export const GetResource = (key) => { 
     if(!key || key.length <= 0)
