@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import { AppContextProvider } from './AppContext';
 import Routers from './Routers';
 import axios from 'axios';
-import Header from '../Master/Header';
+const Header = React.lazy(()=> import('../Master/Header'));
 
 const menus =[
     {MenuId: 1, MenuTitle:"Home", MenuTarget:"Home", IsScrollTo:true},
@@ -27,7 +27,7 @@ function App(props) {
     },[])
     if(!dataFetched)
     {
-    return <label>{"...Loading..."}</label>
+        return <label>{"...Loading..."}</label>
     }
     return (
         <div style={style}>

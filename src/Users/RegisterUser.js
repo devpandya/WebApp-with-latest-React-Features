@@ -11,7 +11,7 @@ function RegisterUser(props) {
     const [pageError, setPageError] = useState("");
 
     const onRegisterClick = () =>{
-
+        setPageError("");
     }
 
     return (

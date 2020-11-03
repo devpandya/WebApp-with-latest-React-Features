@@ -4,6 +4,7 @@
     color:var(--primary-app-color);
     margin: 15px 15px;
     font-size: var(--font-size-body-large);
+    cursor: pointer;
 }
 /*------------------Font Colors------------------*/
 .f-primary-text{
