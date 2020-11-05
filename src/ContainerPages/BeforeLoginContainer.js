@@ -1,31 +1,14 @@
 import React , { useState, useEffect }from 'react';
-import {ValidateForms} from '../utility/functions.js';
 import '../Css/label.css';
 import './beforelogin.css';
 
 function BeforeLoginContainer(props) {
     const [pageError, setPageError] = useState(props.pageError);
-    const [childWNP,setChildWNP] = useState(props.children);
     useEffect(()=>{ 
         if(pageError !== props.pageError){
             setPageError(props.pageError);
         }
-        debugger;
-        props.ValidateForm && props.ValidateForm(ValidaeForm);
-        if(props.children !== "Loading..."){
-            let childWithNewProps = React.Children.map(childWNP,child =>{
-                const asl = e => {return e}
-                return React.cloneElement(child,{ValidateElement: asl, ...child.props});
-            });
-            setChildWNP(childWithNewProps);
-            debugger;
-        }
     },[props.pageError, setPageError]);
-
-    const ValidaeForm = () =>{
-        debugger;
-        let result = ValidateForms(props.children);
-    }
 
     return (
         <div className="container">
@@ -36,7 +19,7 @@ function BeforeLoginContainer(props) {
                         pageError && pageError.length > 0 && <label  className="f-error f-body-l">{pageError}</label>
                     }
                     {
-                        childWNP
+                        props.children
                     }
                 </div>
             </div>

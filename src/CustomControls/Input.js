@@ -15,10 +15,7 @@ const Input = props => {
         if(value !== props.value){
             setValue(props.value)
         }
-        debugger;
-        if(props.ValidateElement){
-            props.ValidateElement(ValidateElement);
-        }
+        props.registerControl && props.registerControl({"name":props.name, "validationFunction": ValidateElement});
     },[props.value, setValue]);
 
     const onChange = (e) =>{
